@@ -1,6 +1,6 @@
 {
 	"name": "cursor-jump",
-	"displayName": "cursor-jump",
+	"displayName": "Cursor Jump",
 	"description": "Jump eg. 7 lines up/down with alt+up/down (fast navigation, customizable)",
 	"version": "0.0.1",
 	"author": "Leonard Pauli",
@@ -33,6 +33,18 @@
 				"when": "editorTextFocus",
 				"key": "alt+down",
 				"args": {"lineDelta": 7, "charDelta": 0}
+			},
+			{
+				"command": "extension.cursor-jump",
+				"when": "editorTextFocus",
+				"key": "shift+alt+up",
+				"args": {"lineDelta": -7, "charDelta": 0, "moveAnchor": false}
+			},
+			{
+				"command": "extension.cursor-jump",
+				"when": "editorTextFocus",
+				"key": "shift+alt+down",
+				"args": {"lineDelta": 7, "charDelta": 0, "moveAnchor": false}
 			}
 		]
 	},
